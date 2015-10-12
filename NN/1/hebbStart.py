@@ -1,3 +1,4 @@
+#coding:utf-8
 import hebb
 import show
 import numpy as np
@@ -29,6 +30,8 @@ test_half = [
 if __name__ == '__main__':
 	
 	W = hebb.training(ps)
+	i = 0
 	for p in test_half:
 		a = hebb.start(p,W)
-		show.drawTwo(p,a)
+		show.drawTwo(p,a,i)
+		i += 1
