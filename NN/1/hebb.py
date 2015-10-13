@@ -1,4 +1,5 @@
 #coding:utf-8
+#InnerAc
 import numpy as np
 import show
 hardlims = lambda x: 1 if x >= 0 else -1

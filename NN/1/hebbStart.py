@@ -1,4 +1,5 @@
 #coding:utf-8
+#InnerAc
 import hebb
 import show
 import numpy as np
