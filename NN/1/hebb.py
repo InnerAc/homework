@@ -16,12 +16,22 @@ def training(inp,outp):
 		po = np.matrix(outp[i])
 		W += pi.T * po
 	return W
+
+# 开始训练，仿逆矩阵训练
+def trainings(inp,outp):
+	T = np.matrix(outp)
+	P = np.matrix(inp)
+	T = T.T
+	# P = P.T
+	Pp = np.linalg.inv(P * P.T) * P
+	W = T * Pp
+	return W
 # 开始测试，输入测试样例和权值矩阵,返回输出的矩阵并且转换为数组
 def start(pt,W):
 	pt = np.matrix(pt)
 	
-	n = pt * W
-
+	n = W * pt.T
+	
 	n =  n.getA1()
 	a = []
 	for i in n:

@@ -32,7 +32,7 @@ TO = [
 
 if __name__ == '__main__':
 	
-	W = hebb.training(TI,TO)
+	W = hebb.trainings(TI,TO)
 	i = 0
 	for p in TI:
 		a = hebb.start(p,W)
