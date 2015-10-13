@@ -30,7 +30,7 @@ test_half = [
 
 if __name__ == '__main__':
 	
-	W = hebb.training(ps)
+	W = hebb.training(ps,ps)
 	i = 0
 	for p in test_half:
 		a = hebb.start(p,W)
