@@ -1,6 +1,7 @@
 #coding:utf-8
 #InnerAc
 #bp.py
+#使用三层网络计算异或，公式为 a^b = a|b - a&b
 import numpy as np
 from numpy import random
 
